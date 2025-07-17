@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deltarune Soundtrack Fan Site</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="overlay"></div>
+
+  <header>
+    <h1>Deltarune - Fan Soundtrack Library</h1>
+    <p class="synopsis">
+      Make yourself comfortable.
+    </p>
+  </header>
+
+  <main>
+    <section class="piano-section">
+      <img src="images/toby_fox_piano.gif" alt="Toby Dog at Piano" class="dog">
+
+      <div class="player-container">
+        <label for="chapterSelect">Chapter selection:</label>
+        <select id="chapterSelect"></select>
+
+        <label for="musicSelect">Choose a song:</label>
+        <select id="musicSelect"></select>
+
+        <audio id="player" controls></audio>
+        <button id="muteButton">🔇 Mute</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <a href="https://deltarune.com">DELTARUNE OFFICIAL WEBSITE</a>
+    <p>DELTARUNE © Toby Fox 2018-2025. All rights reserved.</p>
+
+  </footer>
+
+  <script src="player.js"></script>
+
+</body>
+</html>

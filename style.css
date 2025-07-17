@@ -1,0 +1,96 @@
+/* style.css */
+
+/* Police rétro style Deltarune */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Press Start 2P', monospace;
+  background-image: url('images/Stars_background.gif');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  overflow-x: hidden;
+}
+
+header {
+  text-align: center;
+  padding: 2rem;
+  color: white;
+  text-shadow: 0 0 8px white;
+}
+
+.synopsis {
+  max-width: 800px;
+  margin: 1rem auto;
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+
+.piano-section {
+  text-align: center;
+  padding: 2rem;
+}
+
+.dog {
+  width: 250px;
+  animation: float 4s ease-in-out infinite;
+  filter: drop-shadow(0 0 10px white);
+}
+
+.player-container {
+  margin-top: 1.5rem;
+  font-size: 0.7rem;
+}
+
+select, audio {
+  margin: 0.5rem;
+  background-color: #111;
+  color: white;
+  border: 2px solid white;
+  padding: 0.4rem;
+  font-family: inherit;
+  text-shadow: 0 0 5px white;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.6rem;
+  color: #bbb;
+}
+
+a{
+  color: #00ffff;
+  text-decoration: none;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+/* Flottement du chien */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+/* Animation des personnages */
+.walker {
+  position: fixed;
+  bottom: 0;
+  left: -100px;
+  width: 80px;
+  z-index: 2;
+  animation: walkAcross 8s linear forwards;
+}
+
+@keyframes walkAcross {
+  0% { left: -100px; transform: scaleX(1); }
+  50% { transform: scaleX(1); }
+  100% { left: 110vw; transform: scaleX(1); }
+}
+
+
